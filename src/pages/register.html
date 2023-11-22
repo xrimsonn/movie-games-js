@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="/src/main.js" type="module"></script>
+  </head>
+  <body>
+    <article style="margin-left: 30%; margin-right: 30%; margin-top: 5%">
+      <h1 style="text-align: center;">¡Registrate!</h1>
+      <form id="register-form" action="">
+        <label for="Usuario">Nombre de usuario</label>
+        <input
+          type="text"
+          id="Usuario"
+          name="Usuario"
+          placeholder="Nombre de Usuario"
+          required
+        />
+        <label for="correo">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="Correo"
+          required
+        />
+
+        <label for="contrasena">Contraseña</label>
+        <input
+          type="password"
+          id="contrasena"
+          name="contrasena"
+          placeholder="Contraseña"
+          required
+        />
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </article>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

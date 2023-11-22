@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <article style="margin-left: 30%; margin-right: 30%; margin-top: 5%">
+      <form action="" id="signinform">
+        <h1 style="text-align: center">¡Inicia Sesión!</h1>
+        <label for="correo">Correo electrónico</label>
+        <input
+          type="text"
+          id="correo"
+          name="correo"
+          placeholder="Correo"
+          required
+        />
+
+        <label for="Contrasena">Contraseña</label>
+        <input
+          type="text"
+          id="Contrasena"
+          name="Contrasena"
+          placeholder="Contraseña"
+          required
+        />
+
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </article>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="/src/signinconf.js" type="module"></script>
+  </body>
+</html>
