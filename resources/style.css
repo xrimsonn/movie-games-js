@@ -1,3 +1,15 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap'); */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lora', serif;
+}
+
 nav {
   padding: 0px 40px;
   background-color: #0c1217;
@@ -35,7 +47,7 @@ article {
 
 .container-index {
   background-color: #394046;
-  background-image: url('https://variety.com/wp-content/uploads/2017/06/empty-movie-theater.jpg');
+  background-image: url('/assets/bg.webp');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -68,8 +80,8 @@ header hgroup {
 }
 
 #header p {
-  font-size: 25px!important;
-  color : white!important;
+  font-size: 30px !important;
+  color: white !important;
 }
 .headings {
   align-items: center;
@@ -80,7 +92,7 @@ header hgroup {
 }
 
 p {
-  text-align: justify;
+  text-align: center;
 }
 
 hgroup {
@@ -176,14 +188,15 @@ footer {
   margin: auto;
   margin-top: 100px;
 
-
   /*background-color: #d0f0f8;
   -webkit-mask-image: url("../Images/background-footer.svg");
   mask-image: url("../Images/background-footer.svg");
   -webkit-mask-size: cover;
   mask-size: cover;*/
 }
-.outline, .contrast, .secondary {
+.outline,
+.contrast,
+.secondary {
   border-radius: 5px;
 }
 .user-options {
@@ -292,6 +305,13 @@ p {
 
 .form-msg {
   width: 100%;
-  display:block;
+  display: block;
   text-align: center;
+}
+
+.form-bg {
+  background-image: url('/assets/bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }

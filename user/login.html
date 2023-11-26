@@ -13,43 +13,59 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
-    <link rel="stylesheet" href="/resources/style.css">
+    <link rel="stylesheet" href="/resources/style.css" />
   </head>
-  <body>
-    <article style="margin-left: 30%; margin-right: 30%; margin-top: 5%">
-      <form action="" id="signinform">
-        <h1 style="text-align: center">¡Inicia Sesión!</h1>
-        <label for="correo">Correo electrónico</label>
-        <input
-          type="text"
-          id="correo"
-          name="correo"
-          placeholder="Correo"
-          required
-        />
+  <body class="form-bg">
+    <main
+      class="container"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+      "
+    >
+      <article style="width: 50%">
+        <form id="signinform">
+          <h1 style="text-align: center">¡Inicia Sesión!</h1>
+          <label for="correo">Correo electrónico</label>
+          <input
+            type="text"
+            id="correo"
+            name="correo"
+            placeholder="Correo"
+            required
+          />
 
-        <label for="Contrasena">Contraseña</label>
-        <input
-          type="password"
-          id="Contrasena"
-          name="Contrasena"
-          placeholder="Contraseña"
-          required
-        />
+          <label for="Contrasena">Contraseña</label>
+          <input
+            type="password"
+            id="Contrasena"
+            name="Contrasena"
+            placeholder="Contraseña"
+            required
+          />
 
-        <button class="contrast" type="submit">Iniciar sesión</button>
-        <a style="width: 100%; margin-bottom: 10px;" class="secondary" role="button" href="/index.html">Cancelar</a>
-        <hr />
-        <section class="form-msg">
-          ¿Aún no tienes cuenta? 
-          <a href="/user/register.html">Registrate</a>
-        </section>
-      </form>
-    </article>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
-    <script src="/src/signinconf.js" type="module"></script>
+          <button class="contrast" type="submit">Iniciar sesión</button>
+          <a
+            style="width: 100%; margin-bottom: 10px"
+            class="secondary"
+            role="button"
+            href="/index.html"
+            >Cancelar</a
+          >
+          <hr />
+          <section class="form-msg">
+            ¿Aún no tienes cuenta?
+            <a href="/user/register.html">Registrate</a>
+          </section>
+        </form>
+      </article>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/toastify-js"
+      ></script>
+      <script src="/src/signinconf.js" type="module"></script>
+    </main>
   </body>
 </html>
