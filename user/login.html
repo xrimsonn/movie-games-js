@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registrarse</title>
+    <title>Iniciar Sesión</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
@@ -13,44 +13,43 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
-    <script src="/src/main.js" type="module"></script>
+    <link rel="stylesheet" href="/resources/style.css">
   </head>
   <body>
     <article style="margin-left: 30%; margin-right: 30%; margin-top: 5%">
-      <h1 style="text-align: center;">¡Registrate!</h1>
-      <form id="register-form" action="">
-        <label for="Usuario">Nombre de usuario</label>
-        <input
-          type="text"
-          id="Usuario"
-          name="Usuario"
-          placeholder="Nombre de Usuario"
-          required
-        />
+      <form action="" id="signinform">
+        <h1 style="text-align: center">¡Inicia Sesión!</h1>
         <label for="correo">Correo electrónico</label>
         <input
-          type="email"
+          type="text"
           id="correo"
           name="correo"
           placeholder="Correo"
           required
         />
 
-        <label for="contrasena">Contraseña</label>
+        <label for="Contrasena">Contraseña</label>
         <input
           type="password"
-          id="contrasena"
-          name="contrasena"
+          id="Contrasena"
+          name="Contrasena"
           placeholder="Contraseña"
           required
         />
 
-        <button type="submit">Registrarse</button>
+        <button class="contrast" type="submit">Iniciar sesión</button>
+        <a style="width: 100%; margin-bottom: 10px;" class="secondary" role="button" href="/index.html">Cancelar</a>
+        <hr />
+        <section class="form-msg">
+          ¿Aún no tienes cuenta? 
+          <a href="/user/register.html">Registrate</a>
+        </section>
       </form>
     </article>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
+    <script src="/src/signinconf.js" type="module"></script>
   </body>
 </html>

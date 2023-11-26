@@ -32,6 +32,7 @@ article {
 /* .btn-start > a {
   width: 200px;
 } */
+
 .container-index {
   background-color: #394046;
   background-image: url('https://variety.com/wp-content/uploads/2017/06/empty-movie-theater.jpg');
@@ -287,4 +288,10 @@ html {
 p {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.form-msg {
+  width: 100%;
+  display:block;
+  text-align: center;
 }
