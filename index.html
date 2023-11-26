@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
     />
     <link rel="stylesheet" href="/resources/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a41d3240c2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container-index">
@@ -17,26 +21,27 @@
           <li><strong>Cinephile Showdown</strong></li>
         </ul>
         <ul>
-          <li id="registro"><a href="/src/pages/register.html">Registrarse</a></li>
+          <li id="registro">
+            <a class="secondary" href="/src/pages/register.html" role="button"
+              >Registrarse</a
+            >
+          </li>
           <li id="login">
-            <a class="secondary" href="/src/pages/login.html" role="button"
-              >Iniciar</a
+            <a class="contrast" href="/src/pages/login.html" role="button"
+              >Inicia Sesión</a
             >
           </li>
         </ul>
       </nav>
       <header class="container" id="header">
-        <hgroup>
-          <h1>Cinephile Showdown</h1>
-          <p>
-            Somos una página en constante evolución, y aunque actualmente contamos con dos juegos, nuestro crecimiento es imparable. Queremos ofrecerte la oportunidad de desconectar por unos momentos del mundo real y relajarte. Sabemos que todos necesitamos un descanso ocasional. Nuestros juegos están diseñados para proporcionarte esa pausa tan necesaria mientras te sumerges en la diversión.
-
-            Además, mientras disfrutas de nuestros juegos, también te invitamos a explorar nuevas películas que quizás aún no hayas descubierto. Amplía tus horizontes cinematográficos y encuentra joyas que capten tu interés. ¡Déjanos ser tu escape virtual y tu guía para descubrir emocionantes historias en la pantalla grande!
-          </p>
-        </hgroup>
-        <p class="btn-start" id="btn-inicio">
-          <a href="./user/feed.html" role="button">Iniciar</a>
+        <br /><br />
+        <p>
+          Somos una página en constante evolución, y aunque actualmente contamos
+          con dos juegos, nuestro crecimiento es imparable. Queremos ofrecerte
+          la oportunidad de desconectar por unos momentos del mundo real y
+          relajarte.
         </p>
+        <a class="contrast" href="./user/feed.html" role="button">Jugar</a>
       </header>
     </div>
     <div class="info-general">
@@ -47,7 +52,9 @@
               <div class="headings">
                 <h2>5000+ series y peliculas</h2>
                 <p>
-                  Dentro de nuestro juego, te aguarda la posibilidad de explorar más de mil películas, permitiéndote crear una lista personalizada con las que más capturen tu interés. Además, nuestra página te ofrecerá información sobre los días propicios para disfrutar de una película. Sabemos que muchos de nosotros apreciamos ver películas en un ambiente nublado o lluvioso. Así que, ¡deja que la atmósfera perfecta se mezcle con las historias cautivadoras que te proponemos para que disfrutes al máximo de tus momentos cinematográficos!
+                  Dentro de nuestro juego, te aguarda la posibilidad de explorar
+                  más de mil películas, permitiéndote crear una lista
+                  personalizada con las que más capturen tu interés.
                 </p>
               </div>
             </div>
@@ -68,14 +75,12 @@
           <div class="info-index">
             <div class="headings">
               <h2>Diferentes juegos</h2>
-              <h3>
-                Juego de Elección de Películas:
-
-Este emocionante juego te presenta dos películas, y tu tarea es seleccionar la que creas que está mejor clasificada. ¡Cada elección correcta acumula valiosos puntos!
-Adivina la Película a Través de la Imagen Borrosa:
-
-Sumérgete en la diversión con nuestro segundo juego, donde se te mostrará una imagen borrosa de una película. Junto a ella, encontrarás opciones de posibles películas a las que podría pertenecer. ¡Adivina correctamente y asegura tu victoria!
-              </h3>
+              <p>
+                Juego de Elección de Películas: Este emocionante juego te
+                presenta dos películas, y tu tarea es seleccionar la que creas
+                que está mejor clasificada. ¡Cada elección correcta acumula
+                valiosos puntos, adivina correctamente y asegura tu victoria!
+              </p>
             </div>
           </div>
         </div>
@@ -85,9 +90,11 @@ Sumérgete en la diversión con nuestro segundo juego, donde se te mostrará una
             <div class="info-index">
               <div class="headings">
                 <h2>Puntuación</h2>
-                <h3>
-                  Registra tu puntuación y deja que sirva como fuente de motivación para superar tu propio récord en cada sesión de juego.
-                </h3>
+                <p>
+                  Registra tu puntuación y deja que sirva como fuente de
+                  motivación para superar tu propio récord en cada sesión de
+                  juego.
+                </p>
               </div>
             </div>
             <div class="container">
@@ -106,32 +113,30 @@ Sumérgete en la diversión con nuestro segundo juego, donde se te mostrará una
           <div class="info-index">
             <div class="headings">
               <h2>¡Mucha variedad!</h2>
-              <h3>
-                Ofrecemos una amplia gama de películas en diversos géneros. No olvides explorar aquellas que más te intriguen; nosotros te sugeriremos el día perfecto para disfrutarlas.
-              </h3>
+              <p>
+                Ofrecemos una amplia gama de películas en diversos géneros. No
+                olvides explorar aquellas que más te intriguen; nosotros te
+                sugeriremos el día perfecto para disfrutarlas.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <footer>
-      <div class="container__footer">
-        <div class="redes">
-          <div class="redes-title">
-            <h2>Redes Sociales</h2>
-          </div>
-          <div class="box__footer">
-            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-          </div>
+      <div class="redes">
+        <h2>Redes Sociales</h2>
+        <div class="box__footer">
+          <a href="#"> <i class="fa-brands fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
         </div>
+      </div>
 
-        <div class="box__copyright">
-          <hr />
-          <p>Derechos Reservados <b>Rene's company</b></p>
-        </div>
+      <div class="box__copyright">
+        <hr />
+        <p>Derechos Reservados <b>Rene's company &copy;</b></p>
       </div>
     </footer>
     <script src="./src/logincheckconf.js" type="module"></script>

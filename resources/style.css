@@ -1,12 +1,15 @@
 nav {
   padding: 0px 40px;
+  background-color: #0c1217;
 }
+
 :root {
   --spacing-company: 3rem;
   --font-weight: 400;
   --border-radius: 0;
 }
 strong {
+  color: #ffffff;
   font-size: 40px;
 }
 h2,
@@ -26,14 +29,15 @@ article {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.btn-start > a {
+/* .btn-start > a {
   width: 200px;
-}
+} */
 .container-index {
   background-color: #394046;
-  background-image: url('/assets/fondo.jpg');
+  background-image: url('https://variety.com/wp-content/uploads/2017/06/empty-movie-theater.jpg');
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 
 header {
@@ -55,6 +59,16 @@ header hgroup {
 }
 #header {
   width: 60%;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+#header p {
+  font-size: 25px!important;
+  color : white!important;
 }
 .headings {
   align-items: center;
@@ -140,16 +154,27 @@ hgroup {
   display: flex;
   flex-direction: column;
   text-align: center;
+  place-items: center;
 }
-.redes-title {
+/* .redes-title {
   display: flex;
   flex-direction: column;
-}
+} */
+
 footer {
   width: 100%;
   padding: 50px 0px;
   background-image: url(../Images/background-footer.svg);
   background-size: cover;
+  background-color: #0c1217;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+
 
   /*background-color: #d0f0f8;
   -webkit-mask-image: url("../Images/background-footer.svg");
@@ -157,8 +182,7 @@ footer {
   -webkit-mask-size: cover;
   mask-size: cover;*/
 }
-.outline {
-  width: 100px;
+.outline, .contrast, .secondary {
   border-radius: 5px;
 }
 .user-options {
@@ -166,9 +190,7 @@ footer {
   border-right: solid 0.5px rgb(50, 50, 66);
   padding: 30px 0 0 20px;
 }
-.nav {
-  border-bottom: solid 0.5px rgb(50, 50, 66);
-}
+
 .user-games {
   width: 80%;
   padding: 30px 70px;
@@ -260,4 +282,9 @@ html {
 #pagina-marcador {
   padding: 70px 0 0 0;
   width: 50%;
+}
+
+p {
+  padding-left: 25px;
+  padding-right: 25px;
 }
