@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="/resources/style.css" />
+    <title>Adivina cual</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="article-game">
+        <div class="generarPeliculas" id="generarPeliculas"></div>
+        <img class="imagen-juego3" id="imagenposter" src="" alt="" />
+      </div>
+      <div class="options">
+        <div class="article-game">
+          <div class="generarPeliculas" id="generarPeliculas2"></div>
+          <img class="imagen-juego3" id="imagen2" src="" alt="" />
+        </div>
+        <div class="article-game">
+          <div class="generarPeliculas" id="generarPeliculas3"></div>
+          <img class="imagen-juego3" id="imagen3" src="" alt="" />
+        </div>
+        <div class="article-game">
+          <div class="generarPeliculas" id="generarPeliculas4"></div>
+          <img class="imagen-juego3" id="imagen4" src="" alt="" />
+        </div>
+        <div class="article-game">
+          <div class="generarPeliculas" id="generarPeliculas5"></div>
+          <img class="imagen-juego3" id="imagen5" src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container" id="pagina-marcador">
+      <div class="inf-games">
+        <h2>Adivina cual</h2>
+        <div class="marcador">
+          <h4 id="Aciertos">Aciertos:0</h4>
+          <h4 id="Errores">Errores:0</h4>
+        </div>
+        <button id="reiniciar">Reiniciar juego</button>
+      </div>
+    </div>
+    <a id="regresar" href="/user/feed.html">Regresar</a>
+    <script src="adivina_cual.js"></script>
+  </body>
+</html>

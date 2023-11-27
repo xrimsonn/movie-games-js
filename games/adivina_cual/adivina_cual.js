@@ -132,9 +132,9 @@ function verificarRespuesta(event) {
 }
 
 function verificarPutuacion(){
-    if(nombreArchivo === "juego1.html")  establecer(20,50,25);
-    else if(nombreArchivo === "juego2.html")  establecer(40,40,30);
-    else if(nombreArchivo === "juego3.html")  establecer(50,30,35);
+    if(nombreArchivo === "facil.html")  establecer(20,50,25);
+    else if(nombreArchivo === "medio.html")  establecer(40,40,30);
+    else if(nombreArchivo === "dificil.html")  establecer(50,30,35);
 }
 function reiniciar(){
     if(record<a && RecordM){
