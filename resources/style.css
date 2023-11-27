@@ -194,20 +194,26 @@ footer {
   -webkit-mask-size: cover;
   mask-size: cover;*/
 }
+
 .outline,
 .contrast,
-.secondary {
+.secondary,
+kbd {
   border-radius: 5px;
 }
 .user-options {
   width: 20%;
   border-right: solid 0.5px rgb(50, 50, 66);
-  padding: 30px 0 0 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: #0f171d;
 }
 
 .user-games {
   width: 80%;
   padding: 30px 70px;
+  > article {
+    text-align: center;
+  }
 }
 .pagina-principal {
   display: flex;
@@ -314,4 +320,8 @@ p {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+article > h1 {
+  margin-bottom: 1rem;
 }
