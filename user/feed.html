@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Futchibol</title>
+    <title>Cinephile Showdown</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
@@ -14,6 +14,10 @@
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
     <link rel="stylesheet" href="/resources/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a41d3240c2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body class="form-bg">
@@ -22,12 +26,14 @@
         <h2>Cinephile Showdown</h2>
       </ul>
       <ul>
-        <li><a href="/index.html">Inicio</a></li>
         <li>
-          <a href="#" id="profile" role="button" class="outline">Perfil</a>
+          <a href="/index.html" role="button" class="secondary">Inicio</a>
         </li>
+        <!--li>
+          <a href="#" id="profile" role="button" class="secondary">Perfil</a>
+        </li-->
         <li>
-          <a href="#" id="logout" role="button" class="outline">Salir</a>
+          <a href="#" id="logout" role="button" class="secondary">Salir</a>
         </li>
       </ul>
     </nav>
@@ -35,78 +41,130 @@
       <div class="user-options">
         <div class="details">
           <details>
-            <summary>juego adivina ranking</summary>
-            <a href="#juego1"> <p>Descripcion</p></a>
-            <p>Jugar</p>
-          </details>
-          <details>
-            <summary>Fecha de lanzamiento</summary>
-            <a href="#juego2"> <p>Descripcion</p></a>
-            <p>Jugar</p>
+            <summary>El Mejor Valorado</summary>
+            <a href="#mejor_valorado"> <kbd>Ver</kbd></a>
           </details>
           <details>
             <summary>Adivina Cuál</summary>
-            <a href="#juego3"> <p>Descripcion</p></a>
-            <p>Jugar</p>
+            <a href="#adivina_cual"> <kbd>Ver</kbd></a>
+          </details>
+          <details>
+            <summary>Recomendaciónes</summary>
+            <a href="#recomendaciones"> <kbd>Ver</kbd></a>
           </details>
         </div>
       </div>
       <div class="user-games">
         <article>
-          <h1 id="juego1">El mejor valorado</h1>
+          <h1 id="mejor_valorado">
+            <mark>
+              <i class="fa-solid fa-question"></i>
+              Mejor Valorado
+            </mark>
+          </h1>
           <p>
-            Este emocionante juego te presenta dos películas, y tu tarea es seleccionar la que creas que está mejor clasificada. ¡Cada elección correcta acumula valiosos puntos!
+            Este emocionante juego te presenta dos películas, y tu tarea es
+            seleccionar la que creas que está mejor clasificada. ¡Cada elección
+            correcta acumula valiosos puntos!
           </p>
           <div class="grid">
-            <a href="/games/juego1/juego1.html" role="button">Modo libre</a>
-            <a href="/games/juego1/juego2.html" role="button">Facil</a>
-            <a href="/games/juego1/juego3.html" role="button">Medio</a>
-            <a href="/games/juego1/juego4.html" role="button">Dificil</a>
+            <a
+              href="/games/mejor_valorado/libre.html"
+              class="secondary"
+              role="button"
+              >Modo libre</a
+            >
+            <a
+              href="/games/mejor_valorado/facil.html"
+              class="contrast"
+              role="button"
+              >Facil</a
+            >
+            <a
+              href="/games/mejor_valorado/medio.html"
+              class="contrast"
+              role="button"
+              >Medio</a
+            >
+            <a
+              href="/games/mejor_valorado/dificil.html"
+              class="contrast"
+              role="button"
+              >Dificil</a
+            >
           </div>
         </article>
         <article>
-          <h1 id="juego2">ejemplo</h1>
+          <h1 id="adivina_cual">
+            <mark>
+              <i class="fa-solid fa-eye"></i>
+              Adivina Cúal
+            </mark>
+          </h1>
           <p>
-            Aqui va la descripcion del juego Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Minus odio quasi provident nisi,
-            numquam at dolor velit architecto. Repudiandae fugiat expedita, quas
-            atque ad nobis neque itaque sint voluptates ab.
-          </p>
-          <button>Jugar</button>
-        </article>
-        <article>
-          <h1 id="juego3">Adivina cual</h1>
-          <p>
-            Sumérgete en la diversión con nuestro segundo juego, donde se te mostrará una imagen borrosa de una película. Junto a ella, encontrarás opciones de posibles películas a las que podría pertenecer. ¡Adivina correctamente y asegura tu victoria!
+            Sumérgete en la diversión con nuestro segundo juego, donde se te
+            mostrará una imagen borrosa de una película. Junto a ella,
+            encontrarás opciones de posibles películas a las que podría
+            pertenecer. ¡Adivina correctamente y asegura tu victoria!
           </p>
           <div class="grid">
-            <a href="/games/juego3/juego1.html" role="button">Facil</a>
-            <a href="/games/juego3/juego2.html" role="button">Medio</a>
-            <a href="/games/juego3/juego3.html" role="button">Dificil</a>
+            <a
+              href="/games/adivina_cual/facil.html"
+              class="contrast"
+              role="button"
+              >Facil</a
+            >
+            <a
+              href="/games/adivina_cual/medio.html"
+              class="contrast"
+              role="button"
+              >Medio</a
+            >
+            <a
+              href="/games/adivina_cual/dificil.html"
+              class="contrast"
+              role="button"
+              >Dificil</a
+            >
+          </div>
+        </article>
+        <article>
+          <h1 id="recomendaciones">
+            <mark>
+              <i class="fa-solid fa-clapperboard"></i>
+              Recomendaciónes
+            </mark>
+          </h1>
+          <p>
+            Sumérgete en la diversión y demuestra tu destreza en el séptimo arte
+            mientras disfrutas de esta emocionante aventura basada en tu
+            ubicación e idioma. ¡Que comience el juego! 🎬🍿
+          </p>
+          <div class="grid">
+            <a href="/user/recomendations.html" class="contrast" role="button"
+              >Ver las recomendaciónes</a
+            >
           </div>
         </article>
       </div>
     </div>
-    <footer>
-      <div class="container__footer">
-        <div class="redes">
-          <div class="redes-title">
-            <h2>Redes Sociales</h2>
-          </div>
-          <div class="box__footer">
-            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-          </div>
-        </div>
-
-        <div class="box__copyright">
-          <hr />
-          <p>Derechos Reservados <b>Rene's company</b></p>
+    <footer style="margin-top: 0">
+      <div class="redes">
+        <h2>Redes Sociales</h2>
+        <div class="box__footer">
+          <a href="#"> <i class="fa-brands fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
         </div>
       </div>
+
+      <div class="box__copyright">
+        <hr />
+        <p>Derechos Reservados <b>Rene's company &copy;</b></p>
+      </div>
     </footer>
+
     <script src="/src/Logoutconfg.js" type="module"></script>
     <script src="/src/preventinconf.js" type="module"></script>
     <script
